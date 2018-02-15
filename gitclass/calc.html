@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="calc.css">
+	<!-- <link rel="stylesheet" type="text/css" href="calc.php"> -->
+	<script type="text/javascript">
+		function powa(){
+				var a = document.getElementById('display');
+				var b = document.getElementById('pow');
+					if (b=="on") {
+							
+				alert "switch on";
+			}
+				else(a==0) {
+							
+				document.getElementById('display')=num;
+			
+			}
+		}
+		function no(num){
+				
+				if (b=="on") {							
+				alert "switch on";
+			}
+			else{
+				var display=document.getElementById('display').value=num;
+			
+				else if(display ==0) {
+				document.getElementById('display').value+=num;
+			}
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="contain">
+		<div class="scrn"><form name="calc"><input type="text" name="display" id="" size="20" readonly >
+		</input>
+		</form>
+		</div>
+		<div class="btns">
+		<P>
+			<input type="button" value="SIN" class="button black" onclick="calc.display.value=Math.sin(calc.display.value)"></input>
+			<input type="button" value="COS" class="button black" onclick="calc.display.value=Math.cos(calc.display.value)"></input>
+			<input type="button" value="TAN" class="button black" onclick="calc.display.value=Math.tan(calc.display.value)"></input>
+			<input type="button" name="pow" value="ON/OFF" class="button red" onclick="powa()"></input>
+		</P>
+		<P>
+			<input type="button" value="&radic;" class="button black" onclick="calc.display.value=Math.sqrt(calc.display.value)"></input>
+			<input type="button" value="SQR" class="button black" onclick="calc.display.value=Math.pow(calc.display.value,2)"></input>
+			<input type="button" value="^" class="button black" onclick="calc.display.value=Math.pow(calc.display.value,calc.display.value)"></input>
+			<input type="button" value="DEL" class="button red" onclick="calc.display.value=+''"></input>
+		</P>
+		<P>
+			<input type="button" value="1" class="button grey" onclick="no(+1)"></input>
+			<input type="button" value="2" class="button grey" onclick="no(+2)"></input>
+			<input type="button" value="3" class="button grey" onclick="no(+3)"></input>
+			<input type="button" value="*" name="operator" class="button grey" onclick=""></input>
+		</P>
+		<P>
+			<input type="button" value="4" class="button grey" onclick="no(+4)"></input>
+			<input type="button" value="5" class="button grey" onclick="no(+5)"></input>
+			<input type="button" value="6" class="button grey" onclick="no(+6)"></input>
+			<input type="button" value="+" name="operator" class="button grey" onclick=""></input>
+		</P>
+		<P>
+			<input type="button" value="7" class="button grey" onclick="no(+7)"></input>
+			<input type="button" value="8" class="button grey" onclick="no(+8)"></input>
+			<input type="button" value="9" class="button grey" onclick="no(+9)"></input>
+			<input type="button" value="-" name="operator" class="button grey" onclick=""></input>
+		</P>
+		<P>
+			<input type="button" value="0" class="button grey" onclick="no(+0)"></input>
+			<input type="button" value="PI" class="button grey"onclick="calc.display.value+=Math.PI"></input>
+			<input type="button" name="equal" value="=" class="button grey" onclick="calc.display.value=eval(calc.display.value)"</input>
+			<input type="button" value="/" class="button grey" onclick=""></input>
+		</P>
+		</div>
+	</div>
+
+</body>
+</html>
